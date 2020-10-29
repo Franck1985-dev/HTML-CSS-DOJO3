@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+html,body,ul,ol,li,h1,h2,h3,h4,h5,h6,div{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url();
+    background-color: aqua;
+    font-family:"lucida grande";
+
+}
+.container {
+    max-width: 11440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-right{
+    padding: 10px;
+    margin: 20px;
+    color:white;
+    text-decoration: none;
+    align-items: center;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-right: 100px;
+}
+.logo{
+    float: left;
+}
+img:hover{
+  opacity: 0.5;  
+}
+.header-right a {
+    float:right;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 40px;
+    background-size: 0px;
+    position: sticky;
+    color: #000000;
+}
+.lessons{
+    float: center;
+    margin-right: 40px;
+}
+.heading h1{
+    text-transform: uppercase;
+}
+.text-contents{
+    opacity: 0.7;
+	font-size: 26px;
+	letter-spacing: 0px;
+	margin-bottom: 2px;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+}
+header{
+    background-color:turquoise;
+    overflow: hidden;
+    padding:0px;
+    margin: 0px;
+    position: sticky;
+    min-height: 5vh;
+    top: 0;
+  
+}
+.header-left {
+    padding:0px ;
+    margin: 0px;
+}
+.top-wrapper{
+    padding: 180px 0 100px 0;
+    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    background-size: cover;
+    color: wheat;
+    text-align: center;
+}
+.top-wrapper h1{
+	opacity: 0.7;
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.top-wrapper p{
+	opacity: 0.7;
+	margin-bottom: 3px;
+}
+.btn-wrapper{
+    margin: 20px 0;
+    text-align: center;
+}
+.btn-wrapper p{
+	margin-right: 10px 0;
+}
+.signup{
+    background-color:#239b76;
+}
+.facebook{
+    background-color:#3b5998;
+    margin-right: 10px;
+}
+.twitter{
+    background-color: #55acee;
+}
+.btn{
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 14px;
+}
+.btn:hover{
+    opacity: 1;
+}
+.fa{
+    margin-right: 10px;
+}
+.burger{
+    margin-bottom: 70px;
+}
+.burger div{
+	width: 20px;
+    height: 3px;
+    background-color: white;
+	margin: 5px;
+	transition: all 0.5s ease;
+
+}    
+@media screen and (max-width: 1024px){
+        .nav-links{
+            width: 60%;
+        }
+    }
+@media screen and (max-width: 768px) {
+        body{
+            overflow-x:hidden ;
+        }
+        .nav-links {
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            top: 8vh;
+            background-color: #5d4954;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+        }
+    
+     
+    
+      .nav-links li{
+        opacity: 0;
+    
+     }
+     .burger {
+        display: block;
+     }
+}     
+     .nav-active{
+        transform: translateX(0%);
+}
+    
+@keyframes navlinkfade {
+     form {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+    
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+}
+.toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+        opacity: 0;
+}
+.toggle .line3 {
+        transform: rotate(+45deg) translate(-5px, -6px);
+}
+
+footer{
+    background-color: #e2d6dd;
+    background-size: 100px;
+    padding: 50px;
+} 
+footer a{
+    text-align: right;
+    float: right;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 40px;
+    background-size: 0px;
+    position: sticky;
+    color: black;
+} 
+footer.logo{
+    size: 200px;
+}
+
